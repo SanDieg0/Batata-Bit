@@ -684,7 +684,7 @@ footer{
     display: flex;
     width: 100%;
     height: 150px;
-    background-color: var(--bitcoin-orange);
+    background: linear-gradient(0deg, #201e1c 16.69%, #0E1D52 100%);
 }
 footer section{
     display: flex;
