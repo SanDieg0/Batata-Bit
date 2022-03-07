@@ -144,13 +144,20 @@ main{
     line-height: 1.6rem;
     color: #757575;
 }
+.main-tables-container{
+    display: flex;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
 .main-currency-table{
     width: 70%;
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 5px 0 10px;
     font-family: "Inter", sans-serif;
+    scroll-snap-align: center;
 }
 .main-currency-table .currency-table--title{
     margin-bottom: 15px;
@@ -237,8 +244,9 @@ main{
     min-width: 235px;
     max-width: 500px;
     height: 360px;
-    margin: 0 auto;
+    margin: 0 10px 0 5px;
     font-family: "Inter", sans-serif;
+    scroll-snap-align: center;
 }
 .main-comissions-table .comissions-table--title{
     margin-bottom: 15px;
@@ -465,7 +473,7 @@ main{
 .plans-container--slider{
     display: flex;
     /* gap: 50px; */
-    height: 316px;
+    height: 320px;
     overflow-x: scroll;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
