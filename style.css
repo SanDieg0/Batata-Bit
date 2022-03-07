@@ -461,13 +461,25 @@ main{
     color: #757575;
 }
 
+
+.plans-container--slider{
+    display: flex;
+    /* gap: 50px; */
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+
+
 .plans-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0 auto;
+    margin: 50px 5px 0 15px;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -531,11 +543,12 @@ main{
 
 .plans-container--card2{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0 auto;
+    margin: 50px 5px 0 5px;
     padding: 0 15px;
     background-color: var(--just-white);
     border-radius: 15px;
@@ -599,11 +612,12 @@ main{
 
 .plans-container--card3{
     position: relative;
+    scroll-snap-align: center;
     width: 70%;
-    min-width: 230px;
+    min-width: 190px;
     max-width: 300px;
     height: 250px;
-    margin: 50px auto 0 auto;
+    margin: 50px 15px 0 5px;
     padding: 0 15px;
     background-color: var(--bitcoin-orange);
     border-radius: 15px;
@@ -665,3 +679,40 @@ main{
 }
 
 
+
+footer{
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+footer section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+footer .left ul{
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+.left li{
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+.right{
+    display: flex;
+    flex-direction: column;
+}
+.right img{
+    display: block;
+}
+.right p{
+    display: block;
+    color: var(--just-white);
+}
